@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        This is about loops
+    </div>
+
+    <script>
+
+        console.log("This is tutorial 55")
+        let i = 0
+        for(i=0; i<3; i++) {
+            console.log(i)
+        }
+        // output:
+        // 0
+        // 1
+        // 2
+
+
+        // 2..................................
+        let friends = ["Rohan", "Sanjeev", "Deepti", "Pooja", "SkillF"]
+        for(let index = 0; index < friends.length; index++) {
+            console.log("Hello friend, " + friends[index])
+        }
+
+        // output:
+        // Hello friend, Rohan 
+        // Hello friend, Sanjeev
+        // Hello friend, Deepti
+        // Hello friend, Pooja
+        // Hello friend, SkillF
+
+        // 3. for Each loop:....................
+        friends.forEach(function f(element) {
+            console.log("Hello Friend, " + element + " to modern javascript")
+        })
+
+        // output:
+        //  Hello Friend, Rohan to modern javascript
+        //  Hello Friend, Sanjeev to modern javascript
+        //  Hello Friend, Deepti to modern javascript
+        //  Hello Friend, Pooja to modern javascript
+        //  Hello Friend, SkillF to modern javascript
+
+        // // 4. for of loop:.....................
+        for (element of friends) {
+            console.log("Hello Friend, " + element + "tp modern javascript again")
+        }
+
+        // output:
+        // Hello Friend, Rohantp modern javascript again
+        // Hello Friend, Sanjeevtp modern javascript again
+        // Hello Friend, Deeptitp modern javascript again
+        // Hello Friend, Poojatp modern javascript again
+        // Hello Friend, SkillFtp modern javascript again
+
+
+        // 5. for in loop:.........................
+        let employee = {
+            name: "Harry",
+            salary: 2,       
+            channel: "CWH"
+        }
+        // // Use this loop to iterate over objects in javascript 
+        for(key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`)
+        }
+
+
+        // output:
+        // The name of employee is Harry
+        // The salary of employee is 2
+        // The channel of employee is CWH
+
+
+
+        // While loop in Js:....................
+        let x = 0
+        while(x<4) {
+            console.log(`${x} is less than 4.`)
+            x++
+        }
+
+        // output: 
+        // 0 is less than 4.
+        // 1 is less than 4.
+        // 2 is less than 4.
+        // 3 is less than 4.
+
+
+
+        // do while loop in js:.....................
+        let j = 34
+        do{
+            console.log(`${j} is less than 4 and we are inside do while loop`);
+            j++
+        } while(j<4);
+
+        // output: 
+        // 34 is less than 4 and we are inside do while loop
+
+
+    </script>
+</body>
+</html>
